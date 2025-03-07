@@ -9,7 +9,7 @@ The main goal of this development is to strengthen my skills in React.js and the
 
 ### Video
 
-- [Software Demo Video] ()
+- [Software Demo Video] (https://youtu.be/PjeglTTCDRc)
 
 ### Development Environment
 
