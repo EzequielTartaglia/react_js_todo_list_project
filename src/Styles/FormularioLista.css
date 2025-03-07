@@ -1,0 +1,295 @@
+.container{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    gap: 5px;
+    margin: auto;
+    width: 80%;
+
+}
+.searchBar{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: solid 2px rgb(0, 0, 0);
+    transition: all 0.4s;
+    background-color: rgb(255, 255, 255);
+
+}
+.searchInput input{
+    padding: 5px;
+    width: 90%;   
+    background-color: rgb(243, 243, 243);
+    border: 1.5px solid rgba(34, 36, 38, 0.15);
+    border-radius: 6px;
+    font-weight: 600;
+
+
+
+
+}
+input[type="search"]{
+    transition: all 0.6s;
+    
+  } 
+  input[type="search"]:focus{
+    background-color: rgb(230, 230, 230);
+    font-weight: 600;
+  }
+  /* Propiedades del icono "X" del search */
+  input[type="search"]::-webkit-search-cancel-button{
+    cursor: pointer;
+    appearance:none;
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgb(190, 0, 0)'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+}
+    
+  
+.searchIcon{
+    width: 10%;
+    padding: 5px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+
+
+.taskInput{
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 2px rgb(0, 0, 0);
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+.btnCreateTask{
+    border: solid 0.1px rgb(8, 8, 8);
+    border-radius: 6px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
+    transition: all 0.4s;
+    width: 150px;
+
+}
+
+.btnCreateTask:hover,#buttonEdit:hover,#button,.filterSettings button:hover{
+ background-color: aquamarine;
+ color: rgb(5, 5, 5);
+ box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
+cursor: pointer;
+
+}
+
+
+.tasksContainer,.tasksContainerToDo,.tasksContainerStarted,.tasksContainerDone{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    
+}
+
+.taskToDo{
+    padding: 5px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 12px;
+    border: solid 1px #999;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+
+}
+
+.taskTitle{
+ flex: 1;
+ font-size: 20px;
+ padding: 10px;
+}
+
+.filterSettings{
+    margin: 2px;
+    width:60%;
+    margin: auto;
+    
+}
+.filterSettings button{
+    margin: 2px;
+    width: 40%;
+    font-size: 12px;
+}
+#taskUpdateForm, #taskInformation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+    font-weight: 600;
+
+}
+#taskUpdateForm button{
+    border: solid 0.1px rgb(8, 8, 8);
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+    transition: all 0.4s;
+
+}
+#taskUpdateForm button:hover{
+    border: solid 0.1px rgb(8, 8, 8);
+    background-color: aquamarine;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+
+}
+#buttonDelete,#buttonDone,#buttonDoneStarted,#buttonDoneFinish,#buttonDoneFinished,#buttonDoneReply,.filterSettings button{
+    border: solid 0.1px rgb(8, 8, 8);
+    background-color: black;
+    color: aliceblue;
+    padding: 8px 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
+    border-radius: 6px;
+    transition: all 0.4s;
+
+}
+#buttonEdit{       
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    border: none;
+
+}
+#buttonEdit:hover{
+    color: rgb(138, 135, 135);
+    background-color: rgb(0, 0, 0);
+    box-shadow: none;
+
+}
+
+#buttonDoneFinish{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#buttonDoneFinish:hover{
+    background-color: rgb(7, 211, 58);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#buttonDelete{
+    background-color: rgb(190, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+#buttonDelete:hover{
+    background-color: rgb(248, 8, 8);
+    color: black;
+    cursor: pointer;
+}
+#buttonDone{
+    background-color: white;
+    color:rgb(3, 3, 3);    
+    cursor: pointer;
+   
+}
+#buttonDone:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+
+}
+#buttonDoneStarted{
+    background-color: rgb(235, 223, 4);
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+}
+#buttonDoneStarted:hover{
+    background-color: rgb(245, 233, 6);
+    color: black;
+    cursor: pointer;
+
+}
+.containerDoneStarted{
+    background-color: rgb(235, 223, 4);
+    border-radius: 6px;
+    transition: all 0.4s;
+    color: black;
+    font-weight: bolder;
+
+}
+.containerDoneFinished{
+    background-color: rgb(110, 110, 110);
+    border-radius: 6px;
+    color: #999;
+    font-weight: bolder;
+}
+#buttonDoneFinished{
+    background-color: rgb(7, 211, 58);
+    color: black;
+    cursor: pointer;
+}
+#buttonDoneFinished:hover{
+    background-color: rgb(5, 223, 59);
+    color: black;
+    cursor: pointer;
+}
+
+#buttonDoneReply{
+    background-color: rgb(110, 110, 110);
+    border-radius: 6px;
+    color: #888;
+}
+#buttonDoneReply:hover{
+    background-color: rgb(122, 122, 122);
+    border-radius: 6px;
+    color: #999;
+    cursor: pointer;
+
+}
+
+@media (max-width: 500px)  {
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;    
+    }
+    .btnCreateTask{
+        margin: auto;
+        font-size: 10px;
+        width: 80px;
+    }
+    .filterSettings{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .filterSettings button{
+        margin-top: 5px;
+        width: 70px;
+        font-size: 0.5rem;
+    }
+}

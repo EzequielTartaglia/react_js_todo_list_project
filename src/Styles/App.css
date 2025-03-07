@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+}
+
+
+.App {
+  text-align: center;
+  margin-top: 5rem;
+}
+.titleApp{
+  background: #B8E1FC;
+  background: radial-gradient(circle farthest-corner at center center, rgb(85, 204, 164) 0%,black, #afa0ad 100%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subTitleApp{
+  margin-top: -30px;
+}
+.App .quote{
+  display: block;
+  padding: 10px 50px ;
+  margin: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.LoggedList{
+  padding: 20px;
+}
+/* Usuario no reconocido */
+.listApp{
+  margin-top: -30px;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+.listApp li{
+  background-color: aquamarine;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 150px;
+  border-radius: 6px;
+  border: solid 1px black;
+  padding: 8px 0 ;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(5, 5, 5);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
+}
+/* Usuario reconocido */
+.RecognizedUserMesagge{
+margin-top: auto;
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 18px;
+}
+.RecognizedUserMesagge span{
+  background: #B8E1FC;
+  background: radial-gradient(circle farthest-corner at center center,  rgb(85, 204, 164) 0%,rgb(72, 92, 83), rgb(85, 204, 164) 100%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+#footerApp{
+  padding: 15px 110px;
+  background-color: black;
+  color: aliceblue;
+  justify-content: space-around;
+  height: 80px;
+  box-shadow: 0   0 2px  3px  rgba(15, 218, 117, 0.555);
+  top: 0;
+  width: 100%;
+  z-index: 1000005;
+  margin-top: 400px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+#footerCredits{
+  margin-left: -50px;
+}
+#footerCredits li{
+  list-style: none;
+  display: inline-flex;
+  padding: 10px;
+  height: auto;
+  font-size: 14px;
+}
+
+.credito a {
+  color: rgb(67, 233, 177);
+  text-decoration: none;
+  font-weight: 600;
+  padding-left: 10px;
+  
+}
+.credito a:hover{
+  color: rgb(43, 202, 149);
+
+}
+
+@media (max-width: 640px) {
+    #footerApp{
+      padding: 10px;
+      font-size: 0.6rem;
+      margin: 0;
+    }
+    #footerCredits li{
+      display: inline-block;
+      flex-direction: column;
+      padding: 2px;
+    }
+
+    .credito a{
+      padding-left: 2px;
+    }
+}
